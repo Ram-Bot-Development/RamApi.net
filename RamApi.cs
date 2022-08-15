@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 namespace RamApidotnet
 {
     
-    class RamApi
+    public class RamApi
     {
         
-        private static string APIURL = $"https://api.rambot.xyz";
+        public static string APIURL = $"https://api.rambot.xyz";
         
         public static async Task<dynamic> helloAsync(string ApiKey, string Version, string lang = "english")
         {
