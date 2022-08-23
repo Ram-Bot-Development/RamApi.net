@@ -171,7 +171,7 @@ namespace RamApidotnet
         }
         public static async Task<dynamic> birthdayAsync(string ApiKey, string Version, string lang = "english")
         {
-            string requestUrl = APIURL + $"/{Version}/public/bday";
+            string requestUrl = APIURL + $"/{Version}/public/bday/{lang}";
 
             dynamic client = new RestClient(requestUrl, new Config().UseRetryHandler(
                  maxRetries: 5,
