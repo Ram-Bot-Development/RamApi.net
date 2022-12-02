@@ -286,6 +286,19 @@ namespace RamApidotnet
 
             return await client.Headers(new Dictionary<string, string> { { "api-key", ApiKey } }).Get();
         }
+        public static async Task<dynamic> rpsAysync(string ApiKey, string Version)
+        {
+            string requestUrl = APIURL + $"/{Version}/public/rps";
+
+            dynamic client = new RestClient(requestUrl, new Config().UseRetryHandler(
+                 maxRetries: 5,
+                    waitToRetryInSeconds: 6,
+                    maxWaitToRetryInSeconds: 10,
+                    backOffStrategy: DalSoft.RestClient.Handlers.RetryHandler.BackOffStrategy.Linear
+                ));
+
+            return await client.Headers(new Dictionary<string, string> { { "api-key", ApiKey } }).Get();
+        }
     }
 
 

@@ -1,3 +1,6 @@
 ﻿obj
 RamApi.net.csproj
 bin
+*.vsidx
+.vs
+RamApidotnet.csproj
