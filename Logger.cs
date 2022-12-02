@@ -12,15 +12,15 @@ namespace RamApidotnet
     {
         public static void Info(string name, string message)
         {
-            ColoredConsole.WriteLine($"{Cyan(string.Format("0:hh:mm:ss tt", DateTime.Now).ToUpper())}{Gray(" - ")}{Blue("[")}{Cyan(name)}{Blue("]")}{Green("Info")}{Gray(" | ")}{Green(message)}");
+            ColoredConsole.WriteLine($"{Cyan(string.Format("{0:hh:mm:ss tt}", DateTime.Now).ToUpper())}{Gray(" - ")}{Blue("[")}{Cyan(name)}{Blue("]")} {Green("Info")}{Gray(" | ")}{Green(message)}");
         }
         public static void Warn(string name, string message)
         {
-            ColoredConsole.WriteLine($"{Cyan(string.Format("0:hh:mm:ss tt", DateTime.Now).ToUpper())}{Gray(" - ")}{Blue("[")}{Cyan(name)}{Blue("]")}{Yellow("Warn")}{Gray(" | ")}{Yellow(message)}");
+            ColoredConsole.WriteLine($"{Cyan(string.Format("{0:hh:mm:ss tt}", DateTime.Now).ToUpper())}{Gray(" - ")}{Blue("[")}{Cyan(name)}{Blue("]")} {Yellow("Warn")}{Gray(" | ")}{Yellow(message)}");
         }
         public static void Error(string name, string message)
         {
-            ColoredConsole.WriteLine($"{Cyan(string.Format("0:hh:mm:ss tt", DateTime.Now).ToUpper())}{Gray(" - ")}{Blue("[")}{Cyan(name)}{Blue("]")}{Red("Error")}{Gray(" | ")}{Red(message)}");
+            ColoredConsole.WriteLine($"{Cyan(string.Format("{0:hh:mm:ss tt}", DateTime.Now).ToUpper())}{Gray(" - ")}{Blue("[")}{Cyan(name)}{Blue("]")} {Red("Error")}{Gray(" | ")}{Red(message)}");
         }
     }
 }

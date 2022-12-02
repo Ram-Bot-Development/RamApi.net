@@ -6,7 +6,7 @@
     <Nullable>disable</Nullable>
     <Authors>Gamearoo_Codes</Authors>
     <Company></Company>
-    <Version>3.1.1</Version>
+    <Version>3.1.2</Version>
     <NeutralLanguage>en</NeutralLanguage>
 	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
