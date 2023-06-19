@@ -12,6 +12,8 @@ We understand using ram api can be hard as it has alot this package calls the ap
 
 for a api key join the discord and go to #request-api-keys https://discord.gg/5a93U2xYjZ
 
+Required in normal or pro but not needed in basic
+
 
 
 > Checks
